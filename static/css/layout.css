@@ -1,0 +1,11 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #1b1f25, #181c1f);
+    color: white;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

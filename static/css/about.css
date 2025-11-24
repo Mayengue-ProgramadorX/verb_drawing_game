@@ -1,0 +1,53 @@
+/* Background */
+.about-body {
+  background: #1b1f25;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/* Center content */
+.about-container {
+  max-width: 650px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+.about-container h1 {
+  font-size: clamp(24px, 5vw, 32px);
+  color: #4da3ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #4da3ff;
+}
+
+/* Text block */
+.about-container p[data-key="about_text"] {
+  background: rgba(22, 43, 65, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 1.6;
+  text-align: left;
+  font-size: clamp(14px, 2.5vw, 18px);
+  margin-top: 20px;
+  white-space: pre-line;
+}
+
+/* Back button */
+.about-container button {
+  background: #006cff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: clamp(16px, 4vw, 20px);
+  box-shadow: 0 0 10px #4da3ff;
+  transition: 0.2s;
+}
+
+.about-container button:hover {
+  background: #0052cc;
+}

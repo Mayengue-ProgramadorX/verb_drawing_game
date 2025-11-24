@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verb Drawing Game</title>
+  <link rel="icon" type="image/png" href="/static/icons/favicon.png">
+
+  <!-- PWA Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#0073ff">
+
+  <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/static/css/roleta.css">
+</head>
+
+<body>
+
+  <div class="container" id="roleta-container">
+
+    <h1>🎰 Verb Drawing Game</h1>
+
+    <div class="roletas">
+      <div id="slotVerb" class="roleta">?</div>
+      <div id="slotTense" class="roleta">?</div>
+    </div>
+
+    <p id="spinMessage"></p>
+
+    <button id="spin">Spin 🎲</button>
+
+    <div id="typeOutput"></div>
+
+    <button id="btnConjugar" style="display:none;">Conjugate</button>
+
+    <button id="btnback" onclick="window.location.href='{{ url_for('index') }}'">⬅ Menu</button>
+
+  </div>
+
+  <audio id="sound" src="/static/sound/spin.mp3"></audio>
+
+  <script src="/static/js/animation.js"></script>
+  <script src="/static/js/roleta.js"></script>
+</body>
+</html>

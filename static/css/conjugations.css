@@ -1,0 +1,99 @@
+/* Background of the page */
+body {
+    background: #0a0f1a;               /* dark blue background for contrast */
+    font-family: Arial, sans-serif;    /* clean font */
+    color: white;                      /* default text color */
+    display: flex;                     /* center container horizontally */
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main card container */
+.card {
+    background: #000814;               /* deep dark background for card */
+    border: 3px solid #111;            /* subtle border */
+    box-shadow: 0 0 25px rgba(0,255,255,0.2); /* glowing effect */
+    border-radius: 18px;               /* rounded corners */
+    padding: 25px;
+    width: 85%;                        /* responsive width */
+    max-width: 350px;                  /* limit max width */
+}
+
+/* Lines like "Verb:" and "State:" */
+.label {
+    font-size: 19px;
+}
+
+/* Green verb text */
+.verb {
+    color: #00ff66;                    /* neon green */
+    font-weight: bold;
+}
+
+/* Orange tense text */
+.tense {
+    color: #ffa500;                    /* bright orange */
+    font-weight: bold;
+}
+
+/* Conjugation title */
+h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-decoration: underline;         /* underline text */
+}
+
+/* UL container */
+.conj-list {
+    list-style: none;                  /* remove bullet points */
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+/* Each conjugation item */
+.conj-list li {
+    margin: 6px 0;                     /* spacing between lines */
+    font-size: 20px;
+}
+
+/* Pronoun label (I:, You:, etc) */
+.conj-list b {
+    color: #5dade2;                    /* light blue */
+}
+
+/* Conjugated verb text */
+.conj {
+    color: #00ff66;                    /* same neon green */
+    font-weight: bold;
+}
+
+/* Button style */
+.btn {
+    width: 100%;
+    padding: 9px;
+    margin-top: 8px;
+    background: #005be0;               /* strong blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;                   /* pointer cursor */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background: #0077ff;
+}
+
+/* Back button styling */
+.btn.back {
+    background:#0077e6;                  /* dark gray */
+    margin-top: 15px;
+}
+
+/* Hover for back button */
+.btn.back:hover {
+    background: #66b7ff;
+}

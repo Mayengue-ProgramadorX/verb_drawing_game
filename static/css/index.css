@@ -1,0 +1,38 @@
+body {
+  background: #1b1f25;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* TITLE */
+h1 {
+  font-family: Poppins, Arial;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(0,115,255);
+  margin-top: 25px;
+  margin-bottom: 35px;
+  text-shadow: 0 0 10px rgb(0,115,255);
+}
+
+button {
+  width: 90%;
+  max-width: 320px;
+  margin: 14px auto;
+  padding: 12px 20px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: rgb(0,115,255);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgb(0,115,255);
+}
+
+button:hover {
+  opacity: 0.9;
+  background: rgb(6, 88, 188);
+
+}

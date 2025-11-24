@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title data-key="about_title">About Game</title>
+  <link rel="icon" type="image/png" href="/static/icons/favicon.png">
+
+  <!-- PWA Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#0073ff">
+
+  <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/static/css/about.css">
+</head>
+
+<body class="about-body">
+  <div class="about-container">
+    <h1>About Game</h1>
+
+    <p data-key="about_text">
+        Verb Spin Game - A fun way to practice English verb conjugation!
+        This game offers a simple, fun, and interactive way to learn and practice verb conjugation in English.
+        Click “Spin” → get verb → select “Conjugate” → AI voice reads all conjugations.
+    </p>
+
+    <p><strong>Developed by:</strong> Jose Mayengue Antonio</p>
+    <p><strong>Email:</strong> <a href="mailto:josemayengue51@gmail.com">josemayengue51@gmail.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/17744945819">+1 7744945819</a></p>
+    <p><strong>Date:</strong> November 2025</p>
+
+    <button onclick="window.location.href='{{ url_for('index') }}'">⬅ Back</button>
+  </div>
+</body>
+</html>
