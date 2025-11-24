@@ -31,36 +31,8 @@
 
     <button onclick="window.location.href='{{ url_for('roleta') }}'">Start Game</button>
     <button onclick="window.location.href='{{ url_for('about') }}'">About</button>
-    <button onclick="exitApp()" data-key="exit">Close game</button>
   </div>
 
-  <script>
-    /**
-     * exitApp()
-     * Safely closes the game depending on the platform:
-     * - PWA installed → closes the app
-     * - Mobile browser → tries to close the tab
-     * - Desktop browser → tries to close the tab
-     */
-    function exitApp() {
-
-      // ✔ If running as a PWA app
-      if (window.matchMedia("(display-mode: standalone)").matches) {
-          // iOS, Android, Desktop PWA
-          console.log("Closing PWA...");
-          window.close();
-          return;
-      }
-
-      // ✔ Normal browser fallback
-      console.log("Trying to close browser tab...");
-      window.open('', '_self');  // required for some browsers
-      window.close();
-
-      // If window did not close (Chrome blocks sometimes)
-      alert("Cannot close automatically.\nPlease close the tab manually.");
-    }
-  </script>
 
   <script>
     // Register the Service Worker
